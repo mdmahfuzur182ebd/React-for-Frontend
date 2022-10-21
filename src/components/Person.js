@@ -1,9 +1,12 @@
 import React from 'react';
 
-function Person () {
+
+
+const Person = (props) => {
+    console.log(props);
     return(
       <div>
-        <h1>This Function Component</h1>
+        <h2>Name : {props.name} || Age : {props.age}</h2>
       </div>
 
     );
