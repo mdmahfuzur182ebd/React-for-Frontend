@@ -6,7 +6,8 @@ const Person = (props) => {
     console.log(props);
     return(
       <div>
-        <h2>Name : {props.name} || Age : {props.age}</h2>
+        <h2>Name : {props.name} and  Age : {props.age} years</h2>
+        <h4>Children : {props.children}</h4>
       </div>
 
     );

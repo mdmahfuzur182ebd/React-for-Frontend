@@ -23,7 +23,8 @@ class App extends Component{
   render() {
       return (
       <div className="App">
-          <h1>This is Random Number</h1>
+          <h1>This is Random Info</h1>
+          <Person name="sajib" age="23">Person info for  the person</Person>
           <Person name="Karim" age="23"/>
           <Person name="Leon" age="33"/>
           <Person name="Rahim" age="24"/>
