@@ -1,24 +1,33 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Person from './components/Person';
+
+
 
 //JSF Code
+//Functional Component
+// function App() {
+//    return (
+//     <div className="App">
+//         <h1>React First App</h1>
+//         <Person/>
+//     </div>
+//   );
 
-function App() {
-   return (
-    <div className="App">
-        <h1>React First App</h1>
-        <Some/>
-    </div>
-  );
-  //return React.createElement('div' ,{clssName :'App'}, React.createElement( 'h1' , null, 'React Library used'), <Some/> );
- 
-}
+// }
 
-function Some() {
-  return(
-    <h1>Another Component React Project</h1>
-  );
-  //return React.createElement( 'div' , null, 'Another React Component in This project !!!');
-  //return React.createElement( 'div' , null, 'React.createElement( 'h1' , null,Another React Component in This project !!!'));
+
+//Class Component
+
+class App extends Component{
+  
+  render() {
+      return (
+      <div className="App">
+          <h1>React First App</h1>
+          <Person/>
+      </div>
+    );
+  }
 }
 
 export default App;
