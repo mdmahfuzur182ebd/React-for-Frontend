@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Person from './components/Person';
+import Book from './components/Book';
 
 
 
@@ -19,20 +19,13 @@ import Person from './components/Person';
 //Class Component
 
 class App extends Component{
-
   render() {
-    //  let obj = new Component();
-    //  console.log(obj);
-     
-      return (
+   return (
       <div className="App">
-          <h1>This is Random Info</h1>
-          <Person name="sajib" age="23">Person info for  the person</Person>
-          <Person name="Karim" age="23"/>
-          <Person name="Leon" age="33"/>
-          <Person name="Rahim" age="24"/>
-          <Person name="Rahman" age="26"/>
-          
+      <h1>Book list</h1>   
+      <Book bookname="1984" writer ="George Orwell"/>
+      <Book bookname="The De Vinci code " writer ="Dan Brown"/>
+      <Book name="The Alchemist" writer ="Paulo Coelho"/>
       </div>
     );
   }
