@@ -43,14 +43,17 @@ class App extends Component{
 
 
    render() {
+       const style ={
+         border: "1px solid red",
+         broadradius: "5px",
+         background: "green",
+         color: "white",
+       };
 
-     const style = {
-         border: "1px solid"
-     };
      console.log(this.state);
    return (
       <div className="App">
-          <h1>Book list</h1>  
+          <h1 style={style}>Book list</h1>  
           <button onClick={()=> this.changeBookastate("Nineteen Eighty Four")}>Change State</button>
           <p></p>
           <input type="text" onChange={this.changewithInputstate} />
