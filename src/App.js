@@ -29,14 +29,31 @@ class App extends Component{
 
    }
 
+   changewithInputstate = event => {
+         this.setState({
+          books : [
+          { bookname: event.target.value, writer :"George Orwell"},
+          { bookname:"The De Vinci code", writer :"Dan Brown"},
+          { bookname:"Metmorphosis", writer :"Franz Kafka"},
+        ],
+     });
+   }
+
+
+
 
    render() {
      console.log(this.state);
    return (
       <div className="App">
           <h1>Book list</h1>  
-          <button onClick={()=> this.changeBookastate("Nineteen Eighty Four")}>Change State</button> 
-          <Book bookname={this.state.books[0].bookname} writer ={this.state.books[0].writer} />
+          <button onClick={()=> this.changeBookastate("Nineteen Eighty Four")}>Change State</button>
+          <p></p>
+          <input type="text" onChange={this.changewithInputstate} />
+
+          <Book bookname={this.state.books[0].bookname} writer ={this.state.books[0].writer} 
+          inputName = {this.changewithInputstate}
+          />
 
           <Book bookname={this.state.books[1].bookname} writer ={this.state.books[1].writer} />
 
