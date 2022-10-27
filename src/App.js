@@ -43,6 +43,10 @@ class App extends Component{
 
 
    render() {
+
+     const style = {
+         border: "1px solid"
+     };
      console.log(this.state);
    return (
       <div className="App">
